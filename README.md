@@ -4,4 +4,4 @@
 ----
 ### Purpose
 
-The destination of this project ilustrate the capabilities of LINQ to Object. There are represents different Queries to Object in this project.
+The destination of this project ilustrate the capabilities of LINQ to Object. There are represented different Queries to Object in this project.
