@@ -7,6 +7,7 @@
 The destination of this project ilustrate the capabilities of LINQ to Object. There are represented different Queries to Object in this project.
 
 ----
+
 ### LINQ to Object different methods implementations
 ```C#
 // LINQ to Array of strings by  IEnumerable<>
@@ -79,7 +80,9 @@ The destination of this project ilustrate the capabilities of LINQ to Object. Th
 
 ### Description of LINQ to Object different methods implementations
 This methods implement the basic functionality of LINQ. This methods show working principles of LINQ Queries by IEnumerable<>, Implicitly Typed Local Variables, LINQ operations and Lambda Expresiion.
+
 ----
+
 ### Program class implementation
 ```C#
  static void Main(string[] args)
@@ -96,8 +99,10 @@ This methods implement the basic functionality of LINQ. This methods show workin
         }
 ```
 ----
+
 ### Description of Program class
 Here we invoke the methods.
 ----
+
 ### Test and Result
 
