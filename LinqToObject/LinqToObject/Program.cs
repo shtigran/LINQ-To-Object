@@ -12,12 +12,12 @@ namespace LinqToObject
         static void Main(string[] args)
         {
             Console.WriteLine("Examples of LINQ to Object");
-            Console.WriteLine(new string('-', 30)+"\n");
+            Console.WriteLine(new string('-', 30) + "\n");
 
             QueryToArray();
             VarQuery();
             DisplayLINQOperations();
-
+            QueryLambdas();
 
             Console.ReadKey();
         }
@@ -25,7 +25,7 @@ namespace LinqToObject
         // LINQ to Array of strings by  IEnumerable<>
         static void QueryToArray()
         {
-            string[] FootballTeams = { "Real Madrid", "Barcelona", "AC Milan", "Mancester United", "Shirak", "Mancester City"};
+            string[] FootballTeams = { "Real Madrid", "Barcelona", "AC Milan", "Mancester United", "Shirak", "Mancester City" };
 
             IEnumerable<string> subset = from g in FootballTeams
                                          where g.Contains(" ") && (g.StartsWith("M") || g.StartsWith("R"))
@@ -40,8 +40,8 @@ namespace LinqToObject
         static void VarQuery()
         {
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 9, 10 };
-            
-            var subset = from i in numbers where i%2==0 select i;
+
+            var subset = from i in numbers where i % 2 == 0 select i;
             Console.WriteLine("\nResult of LINQ to Array by var\n");
             foreach (var i in subset)
                 Console.WriteLine($"Number: {i} ");
@@ -72,7 +72,20 @@ namespace LinqToObject
             .Union(from c2 in yourCars select c2);
             Console.WriteLine("Here is everything:");
             foreach (string s in carUnion)
-                Console.WriteLine(s); 
+                Console.WriteLine(s);
+        }
+
+        //LINQ with Lambda Expresiion
+        static void QueryLambdas()
+        {
+            string[] currentVideoGames = { "Morrowind", "Uncharted 2","Fallout 3", "Daxter", "System Shock 2"};
+       
+            var subset = currentVideoGames.Where(game => game.Contains(" "))
+            .OrderBy(game => game).Select(game => game);
+            Console.WriteLine("\nResult of LINQ tby Lambda Expression");
+            foreach (var game in subset)
+                Console.WriteLine("Item: {0}", game);
+            Console.WriteLine();
         }
 
     }
