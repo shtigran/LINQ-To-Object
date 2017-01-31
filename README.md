@@ -38,17 +38,17 @@ static void VarQuery()
 //LINQ operations
 static void DisplayLINQOperations()
  {
-            Console.WriteLine("\nResult of LINQ Operations\n");
-            List<string> myCars = new List<String> { "Yugo", "Aztec", "BMW" };
-            List<string> yourCars = new List<String> { "BMW", "Saab", "Aztec" };
-            // Get the Diff members.
-            var carDiff = (from c in myCars select c)
-            .Except(from c2 in yourCars select c2);
-            Console.WriteLine("Here is what we have in first list, which isn't in second list:");
-            foreach (string s in carDiff)
-                Console.WriteLine(s);
+    Console.WriteLine("\nResult of LINQ Operations\n");
+    List<string> myCars = new List<String> { "Yugo", "Aztec", "BMW" };
+    List<string> yourCars = new List<String> { "BMW", "Saab", "Aztec" };
+     // Getthe Diff members.
+     var carDiff = (from c in myCars select c)
+             .Except(from c2 in yourCars select c2);
+              Console.WriteLine("Here is what we have in first list, which isn't in second list:");
+              foreach (string s in carDiff)
+              Console.WriteLine(s);
 
-            // Get the common members.
+      // Get the common members.
             var carIntersect = (from c in myCars select c)
             .Intersect(from c2 in yourCars select c2);
             Console.WriteLine("Here is what we have in common:");
