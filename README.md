@@ -27,13 +27,13 @@ static void QueryToArray()
 //LINQ to Array by Implicitly Typed Local Variables  
 static void VarQuery()
  {
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 9, 10 };
+   int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 9, 10 };
 
-            var subset = from i in numbers where i % 2 == 0 select i;
-            Console.WriteLine("\nResult of LINQ to Array by var\n");
-            foreach (var i in subset)
+   var subset = from i in numbers where i % 2 == 0 select i;
+                Console.WriteLine("\nResult of LINQ to Array by var\n");
+                foreach (var i in subset)
                 Console.WriteLine($"Number: {i} ");
-        }
+  }
 
         //LINQ operations
         static void DisplayLINQOperations()
