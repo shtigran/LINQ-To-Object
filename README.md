@@ -16,9 +16,9 @@ static void QueryToArray()
   string[] FootballTeams = { "Real Madrid", "Barcelona", "AC Milan", "Mancester United", "Shirak", "Mancester City" };
 
   IEnumerable<string> subset = from g in FootballTeams
-                                         where g.Contains(" ") && (g.StartsWith("M") || g.StartsWith("R"))
-                                         orderby g
-                                         select g;
+                      where g.Contains(" ") && (g.StartsWith("M") || g.StartsWith("R"))
+                      orderby g
+                      select g;
             Console.WriteLine("Result of LINQ to Array by  IEnumerable<>\n");
             foreach (string s in subset)
                 Console.WriteLine($"Team: {s}");
