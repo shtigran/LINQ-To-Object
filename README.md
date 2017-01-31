@@ -71,8 +71,8 @@ static void DisplayLINQOperations()
     var subset = currentVideoGames.Where(game => game.Contains(" "))
             .OrderBy(game => game).Select(game => game);
     Console.WriteLine("\nResult of LINQ tby Lambda Expression");
-            foreach (var game in subset)
-                Console.WriteLine("Item: {0}", game);
+        foreach (var game in subset)
+     Console.WriteLine("Item: {0}", game);
             Console.WriteLine();
         }
 ```
