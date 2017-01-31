@@ -24,9 +24,9 @@ static void QueryToArray()
   Console.WriteLine($"Team: {s}");
  }
 
-        //LINQ to Array by Implicitly Typed Local Variables  
-        static void VarQuery()
-        {
+//LINQ to Array by Implicitly Typed Local Variables  
+static void VarQuery()
+ {
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 9, 10 };
 
             var subset = from i in numbers where i % 2 == 0 select i;
