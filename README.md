@@ -19,10 +19,10 @@ static void QueryToArray()
                       where g.Contains(" ") && (g.StartsWith("M") || g.StartsWith("R"))
                       orderby g
                       select g;
-            Console.WriteLine("Result of LINQ to Array by  IEnumerable<>\n");
-            foreach (string s in subset)
-                Console.WriteLine($"Team: {s}");
-        }
+  Console.WriteLine("Result of LINQ to Array by  IEnumerable<>\n");
+  foreach (string s in subset)
+  Console.WriteLine($"Team: {s}");
+ }
 
         //LINQ to Array by Implicitly Typed Local Variables  
         static void VarQuery()
