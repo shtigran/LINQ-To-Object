@@ -63,9 +63,9 @@ static void DisplayLINQOperations()
                 Console.WriteLine(s);
         }
 
-        //LINQ with Lambda Expresiion
-        static void QueryLambdas()
-        {
+ //LINQ with Lambda Expresiion
+ static void QueryLambdas()
+  {
             string[] currentVideoGames = { "Morrowind", "Uncharted 2","Fallout 3", "Daxter", "System Shock 2"};
        
             var subset = currentVideoGames.Where(game => game.Contains(" "))
