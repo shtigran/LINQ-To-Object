@@ -55,7 +55,7 @@ static void DisplayLINQOperations()
             foreach (string s in carIntersect)
                 Console.WriteLine(s);
 
-            //Get the union of two lists
+       //Get the union of two lists
             var carUnion = (from c in myCars select c)
             .Union(from c2 in yourCars select c2);
             Console.WriteLine("Here is everything:");
