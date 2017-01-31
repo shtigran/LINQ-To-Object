@@ -35,9 +35,9 @@ static void VarQuery()
                 Console.WriteLine($"Number: {i} ");
   }
 
-        //LINQ operations
-        static void DisplayLINQOperations()
-        {
+//LINQ operations
+static void DisplayLINQOperations()
+ {
             Console.WriteLine("\nResult of LINQ Operations\n");
             List<string> myCars = new List<String> { "Yugo", "Aztec", "BMW" };
             List<string> yourCars = new List<String> { "BMW", "Saab", "Aztec" };
