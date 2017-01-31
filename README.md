@@ -11,11 +11,11 @@ The destination of this project ilustrate the capabilities of LINQ to Object. Th
 ### LINQ to Object different methods implementations
 ```C#
 // LINQ to Array of strings by  IEnumerable<>
-        static void QueryToArray()
-        {
-            string[] FootballTeams = { "Real Madrid", "Barcelona", "AC Milan", "Mancester United", "Shirak", "Mancester City" };
+static void QueryToArray()
+{
+  string[] FootballTeams = { "Real Madrid", "Barcelona", "AC Milan", "Mancester United", "Shirak", "Mancester City" };
 
-            IEnumerable<string> subset = from g in FootballTeams
+  IEnumerable<string> subset = from g in FootballTeams
                                          where g.Contains(" ") && (g.StartsWith("M") || g.StartsWith("R"))
                                          orderby g
                                          select g;
