@@ -66,11 +66,11 @@ static void DisplayLINQOperations()
  //LINQ with Lambda Expresiion
  static void QueryLambdas()
   {
-            string[] currentVideoGames = { "Morrowind", "Uncharted 2","Fallout 3", "Daxter", "System Shock 2"};
+    string[] currentVideoGames = { "Morrowind", "Uncharted 2","Fallout 3", "Daxter", "System Shock 2"};
        
-            var subset = currentVideoGames.Where(game => game.Contains(" "))
+    var subset = currentVideoGames.Where(game => game.Contains(" "))
             .OrderBy(game => game).Select(game => game);
-            Console.WriteLine("\nResult of LINQ tby Lambda Expression");
+    Console.WriteLine("\nResult of LINQ tby Lambda Expression");
             foreach (var game in subset)
                 Console.WriteLine("Item: {0}", game);
             Console.WriteLine();
